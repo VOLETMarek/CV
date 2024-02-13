@@ -12,9 +12,18 @@ body {
   background-color: white;
 }
 
-.main-title,
-section {
+.main-title {
   margin: 0.5rem;
+}
+
+section {
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+section.border {
+  border: solid 1px #129aad;
+  border-radius: 8px;
 }
 
 h3,
@@ -43,20 +52,20 @@ a:hover {
   color: #16c0d8;
 }
 
-p {
-  font-style: italic;
-}
-
 li {
   line-height: 1.5;
 }
 
 ul.main-section_list {
   font-size: smaller;
+  padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.section-list_item {
-  padding: 0 0.5rem 0.5rem 0.5rem;
+ul.main-section_list.border {
+  border-bottom: 1px solid #129aad;
 }
 
 ul.main-section_list li::before {
@@ -163,13 +172,12 @@ body.dark {
 
 .main-section_text,
 .main-section_text__job,
-.section-text_firm,
+.section-text_status,
 .main-title_name {
   color: #16c0d8;
 }
 
 .main-section_title {
-  margin-top: 1rem;
   display: inline-block;
   border: solid 1px #16c0d8;
   border-radius: 5px;
@@ -181,13 +189,19 @@ body.dark {
   background-color: #003f4a;
 }
 
-.main-section_date_location {
+.section-text_activity {
   font-size: small;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
 }
 
 .section-text_text {
   margin-top: 0.5em;
+}
+
+.section-text_date {
+  display: block;
+  font-style: italic;
+  margin-top: 0.25rem;
 }
 
 /*** Dark Mode ***/
@@ -265,7 +279,7 @@ body.dark {
 }
 
 .section-list_item__lang {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 /*** Dark Mode ***/
