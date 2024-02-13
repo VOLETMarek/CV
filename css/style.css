@@ -1,299 +1,309 @@
 /********** Global **********/
 
 body {
-    background-color: #16c0d8;
-    font-family: 'Open Sans', sans-serif;
-    line-height: normal;
-    transition: all 0.2s ease-in-out;
+  background-color: #16c0d8;
+  font-family: "Open Sans", sans-serif;
+  line-height: normal;
+  transition: all 0.2s ease-in-out;
+  letter-spacing: 0.5px;
 }
 
 .wrapper {
-    background-color: white;
+  background-color: white;
 }
 
-.main-title, section {
-    margin : 0.5rem;
+.main-title,
+section {
+  margin: 0.5rem;
 }
 
-h3, .main-title_text__intro {
-    margin-top: 1rem;       
+h3,
+.main-title_text__intro {
+  margin: 1rem 0;
 }
 
 h2 {
-    font-weight: 700;
-    font-size: larger;
-    padding: 0 0.25rem 0 0.25rem;
-    background-color: #16c0d8;
-    color: #004f5c;
+  font-weight: 700;
+  font-size: larger;
+  padding: 0 0.25rem 0 0.25rem;
+  background-color: #16c0d8;
+  color: #004f5c;
 }
 
 h3 {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 a:hover {
-    color: #16c0d8;
+  color: #16c0d8;
 }
 
 p {
-    font-style: italic;
+  font-style: italic;
+}
+
+li {
+  line-height: 1.5;
 }
 
 ul.main-section_list {
-    padding: 0.5rem 0 0 1rem;
-    font-size: smaller;
-    line-height: 1rem;
+  font-size: smaller;
+}
+
+.section-list_item {
+  padding: 0 0.5rem 0.5rem 0.5rem;
 }
 
 ul.main-section_list li::before {
-    content: "\2022";
-    color: #16c0d8;
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
-}  
+  content: "\2022";
+  color: #16c0d8;
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
 
 /*** Dark Mode ***/
 
 h2.dark {
-    color: white;
+  color: white;
 }
 
 body.dark {
-    color: white;
-    background-color: #129aad;
-} 
+  color: white;
+  background-color: #129aad;
+}
 
 /********** Header **********/
 
 .main-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .main-title_title {
-    display: flex;
-    flex-direction: column;
-    line-height: 2;
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
 }
 
 .btn {
-    position: relative;
-    width: 50px;
-    height: 25px;
-    background-color: #16c0d8;
-    align-self: flex-end;
-    border-radius: 100px;
-    cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 25px;
+  background-color: #16c0d8;
+  align-self: flex-end;
+  border-radius: 100px;
+  cursor: pointer;
 }
 
 .btn::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
-    transition: all 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  transition: all 0.2s ease-in-out;
 }
 
 .btn.active::before {
-    background-color: #129aad;
-    left: calc(100% - 20px - 5%);
-} 
+  background-color: #129aad;
+  left: calc(100% - 20px - 5%);
+}
 
 .main-title_name {
-    color: #04515e;
-    margin: auto;
-} 
+  color: #04515e;
+  margin: auto;
+}
 
 /********** Main section left **********/
 
 .main-title_profilpic {
-    width: 200px;
-    height: 200px;
-    border: solid white;
-    border-radius: 50%;
-    transition: 1s;
+  width: 200px;
+  height: 200px;
+  border: solid white;
+  border-radius: 50%;
+  transition: 1s;
 }
 
 .main-title_profilpic:hover {
-    transform: scale(1.1);
-    border: solid #16c0d8;
+  transform: scale(1.1);
+  border: solid #16c0d8;
 }
 
 .main-title_jobname {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .main-title_jobname::after {
-    content: "";
-    display: block;
-    height: 1px;
-    background-color: #16c0d8;
-    transform: scale(0);
-    transition: transform 0.2s ease-in-out;
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #16c0d8;
+  transform: scale(0);
+  transition: transform 0.2s ease-in-out;
 }
 
 .main-title_jobname:hover::after {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 .left-content {
-    padding: 1rem;
+  padding: 1rem;
 }
 
-.main-section_text, .main-section_text__job, .section-text_firm, .main-title_name {
-    color: #16c0d8;
+.main-section_text,
+.main-section_text__job,
+.section-text_firm,
+.main-title_name {
+  color: #16c0d8;
 }
 
 .main-section_title {
-    margin-top: 1rem;
-    display: inline-block;
-    border: solid 1px #16c0d8;
-    border-radius: 5px;
-    transition: .5s;
+  margin-top: 1rem;
+  display: inline-block;
+  border: solid 1px #16c0d8;
+  border-radius: 5px;
+  transition: 0.5s;
 }
 
 .main-section_title:hover {
-    color: white;
-    background-color: #003f4a;
+  color: white;
+  background-color: #003f4a;
 }
 
 .main-section_date_location {
-    font-size: small;
-    margin-top: 0.5rem;
+  font-size: small;
+  margin: 0.5rem 0;
 }
 
 .section-text_text {
-    margin-top: 0.5em;
-}  
+  margin-top: 0.5em;
+}
 
 /*** Dark Mode ***/
 
 .main-title_profilpic.dark {
-    border-color: #16c0d8;
+  border-color: #16c0d8;
 }
 
 .left-content.dark {
-    background-color: #181a1b;
-} 
+  background-color: #181a1b;
+}
 
 /********** Main section right **********/
 
 .main-section_right {
-    padding: 1rem ; 
+  padding: 1rem;
 }
 
 .right-content {
-    background-color: #f3f3f3;
-    display: flex;
-    flex-direction: column;
-} 
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+}
 
 .main-section_list__infos {
-    font-size: smaller;
-    display: flex;
-    flex-direction: column; 
-    gap: 1rem;
-    padding: 0.8rem;
+  font-size: smaller;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.8rem;
 }
 
 .main-section_profil_info {
-    padding: 1rem;
-    background: #004f5c;
-    color: white;
-    order: 1;
-    margin: 0;
+  padding: 1rem;
+  background: #004f5c;
+  color: white;
+  order: 1;
+  margin: 0;
 }
 
 .section-list_icon {
-    width : 15px;
-    height: 15px;
-    background-color: #16c0d8;;
-    border: solid #16c0d8;
-    border-radius: 50%;
-    transition: .1s;
+  width: 15px;
+  height: 15px;
+  background-color: #16c0d8;
+  border: solid #16c0d8;
+  border-radius: 50%;
+  transition: 0.1s;
 }
 
 .section-list_icon:hover {
-    transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .section-list__item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .main-section_title__right {
-    background-color: #f3f3f3;
-    padding: 0;
+  background-color: #f3f3f3;
+  padding: 0;
 }
 
 .main-section_loisirs_item {
-    margin-top: 1rem;
-    display: flex;
-    gap: 0.5rem;
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
 .main-section_text_loisirs {
-    color: #16c0d8;
-    font-weight: 600;
-    margin: 0;
+  color: #16c0d8;
+  font-weight: 600;
+  margin: 0;
 }
 
 .section-list_item__lang {
-    margin-top: 0.5rem;
-} 
+  margin-top: 0.5rem;
+}
 
 /*** Dark Mode ***/
 
 .right-content.dark {
-    background-color: #1f2123;
-} 
+  background-color: #1f2123;
+}
 
 .main-section_title__right.dark {
-    background-color: #1f2123;
+  background-color: #1f2123;
 }
 
 /********** Responsive Section **********/
 
-@media (min-width: 768px) { 
-    body {
-        display: grid;
-        grid-template-rows: 100vh;
-        grid-template-columns: 100vw;
-    }
-
-    .left-content {
-        width: 65%;
-    }
-
-    .right-content {
-        width: 35%;
-    } 
-
-    .wrapper {
-        display: flex;
-        width: 900px;
-        margin: auto;
-        justify-self: center;
-        align-self: center;
-    }
-
-    .main-section_profil_info {
-        order: 0;
-    }
+@media (min-width: 768px) {
+  body {
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 100vw;
   }
+
+  .left-content {
+    width: 65%;
+  }
+
+  .right-content {
+    width: 35%;
+  }
+
+  .wrapper {
+    display: flex;
+    width: 900px;
+    margin: auto;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .main-section_profil_info {
+    order: 0;
+  }
+}
