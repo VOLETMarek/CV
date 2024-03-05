@@ -59,6 +59,23 @@ li {
   gap: 0.5rem;
 }
 
+.section-list_title {
+  font-size: small;
+  margin-bottom: 1rem;
+}
+
+.left-right {
+  flex-direction: row;
+}
+
+.section-item-container {
+  width: 500%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
 .main-section_list.border {
   border-bottom: 1px solid #129aad;
 }
