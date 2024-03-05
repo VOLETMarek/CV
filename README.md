@@ -2,7 +2,7 @@
 
 ☀️ Welcome to my GitHub repository for my CV! ☀️
 
-This repository contains my updated CV, which showcases my skills, experience, and qualifications. The CV is available in [PDF format](CV.pdf). You can also visit it <a href="https://cv-marek-volet.vercel.app/html" target="_blank"> here </a> 👌
+This repository contains my updated CV, which showcases my skills, experience, and qualifications. The CV is available <a href="https://cv-five-weld.vercel.app/html/online-version" target="_blank"> here </a> 👌
 
 ## ⚒︎ My process ⚒︎
 
