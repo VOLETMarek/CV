@@ -66,4 +66,4 @@ The CV is hosted on Vercel and deployed from the `master` branch: push your chan
 
 If you have any questions, comments, or would like to connect, you can reach me via email at [marek.volet@hotmail.fr].
 
-Thank you for visiting my CV repository, see you soon ☺️👋
+Thank you for visiting my CV repository, see you soon 👋
